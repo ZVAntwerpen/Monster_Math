@@ -1,0 +1,30 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg, Vcl.ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    redOutput: TRichEdit;
+    Image1: TImage;
+    Shape1: TShape;
+    lblLastplayed_ttl: TLabel;
+    Button8: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+end.

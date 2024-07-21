@@ -1,0 +1,75 @@
+========================
+User: Zandre
+Gender: Male
+Mode: Mixed
+Score: 216
+========================User: ZANII
+Gender: Female
+Mode: Mixed
+Score: 933
+========================
+User: chan3
+Gender: Female
+Mode: Addition
+Score: 884
+========================
+User: luze the lol
+Gender: Female
+Mode: Addition
+Score: 36
+========================
+User: alaska
+Gender: Female
+Mode: Addition
+Score: 1503
+========================
+User: zani
+Gender: Female
+Mode: Addition
+Score: 1771
+========================
+User: zani
+Gender: Female
+Mode: Mixed
+Score: 1998
+========================
+User: alaska
+Gender: Female
+Mode: Mixed
+Score: 0
+========================
+User: alaska
+Gender: Female
+Mode: Multiply
+Score: 0
+========================
+User: alaska
+Gender: Female
+Mode: Addition
+Score: 0
+========================
+User: alaska
+Gender: Female
+Mode: Minus
+Score: 39
+========================
+User: alaska
+Gender: Female
+Mode: Minus
+Score: 22
+========================
+User: alaska
+Gender: Female
+Mode: Minus
+Score: 332
+========================
+User: alaska
+Gender: Female
+Mode: Minus
+Score: 0
+========================
+User: alaska
+Gender: Female
+Mode: Minus
+Score: 1566
+========================

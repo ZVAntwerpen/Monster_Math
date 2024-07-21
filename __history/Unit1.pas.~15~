@@ -1,0 +1,61 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Panel1: TPanel;
+    edtUser: TEdit;
+    Shape1: TShape;
+    Label2: TLabel;
+    Image1: TImage;
+    Label1: TLabel;
+    Button8: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    sUser : string;
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  Unit2;
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  sUser := edtUser.Text;
+
+ if sUser = '' then
+  begin
+    ShowMessage('Please add your Username.');
+  end
+  else
+  begin
+   Form2.Show;
+   Form1.Visible := false;
+  end;
+
+
+end;
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+Application.Terminate;
+end;
+
+end.

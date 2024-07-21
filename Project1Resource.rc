@@ -1,0 +1,4 @@
+JpgImage_1 RCDATA "Pictures\\Title_Background.jpg"
+Lives_Icon RCDATA "Pictures\\Lives_Icon.jpg"
+JpgImage_2 RCDATA "Pictures\\Selection_Background.jpg"
+Help_Image RCDATA "Pictures\\Help_Image.png"

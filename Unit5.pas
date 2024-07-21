@@ -1,0 +1,80 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg, Vcl.ComCtrls;
+
+type
+  TForm5 = class(TForm)
+    redOutput: TRichEdit;
+    imgTeacher_BG: TImage;
+    shpTop_BG: TShape;
+    lblLastplayed_ttl: TLabel;
+    Button2: TButton;
+    Button1: TButton;
+    Button3: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+Uses
+  Unit1;
+{$R *.dfm}
+
+procedure TForm5.Button1Click(Sender: TObject);
+var
+  MyFile: TextFile;
+  sLine: string;
+begin
+  if FileExists('Plays.txt') = false then
+  begin
+    ShowMessage('File not found!');
+    Exit;
+  end;
+
+  AssignFile(MyFile, 'Plays.txt');
+
+  Reset(MyFile);
+
+  while NOT eof(MyFile) do
+  begin
+    Readln(MyFile, sLine);
+
+    redOutput.Lines.Add(sLine);
+  end;
+
+  if sLine = '' then
+    begin
+      ShowMessage('No games were played yet.');
+    end;
+
+  CloseFile(MyFile);
+end;
+
+procedure TForm5.Button2Click(Sender: TObject);
+begin
+  Form1.Show;
+  Form5.Hide;
+  redOutput.Lines.Clear;
+end;
+
+procedure TForm5.Button3Click(Sender: TObject);
+begin
+  redOutput.Lines.Clear;
+end;
+
+end.

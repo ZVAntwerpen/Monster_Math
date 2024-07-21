@@ -1,0 +1,34 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons, Unit1, Unit2;
+
+type
+  TForm3 = class(TForm)
+    Shape1: TShape;
+    BitBtn1: TBitBtn;
+    Button8: TButton;
+    procedure Button8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.Button8Click(Sender: TObject);
+begin
+Form3.Close;
+Form2.Show;
+end;
+
+end.

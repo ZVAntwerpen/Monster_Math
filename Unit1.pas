@@ -1,0 +1,84 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg, Unit5;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    pnlUser_BG: TPanel;
+    edtUser: TEdit;
+    shpTitel_BG: TShape;
+    lblTitel_BG: TLabel;
+    imgTitle_BG: TImage;
+    lblUser_ttl: TLabel;
+    Button2: TButton;
+    Button3: TButton;
+    rdgGender: TRadioGroup;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+    sUser, sGender: string;
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses
+  Unit2;
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  sUser := edtUser.Text;
+
+  if rdgGender.ItemIndex = -1 then
+  begin
+     ShowMessage('Please assign your gender.');
+  end
+  else
+  begin
+
+    case rdgGender.ItemIndex of
+      0: sGender := 'Male';
+      1: sGender := 'Female';
+    end;
+
+
+    if sUser = '' then
+    begin
+      ShowMessage('Please add your Username.');
+    end
+    else
+    begin
+      Form2.Show;
+      Form1.Hide;
+    end;
+  end;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  Form5.Show;
+  Form1.Hide;
+end;
+
+end.
