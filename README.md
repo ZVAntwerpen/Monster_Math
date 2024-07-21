@@ -1,6 +1,4 @@
-## Monster Math
-
-Welcome to my project. Below are instructions for running it.
+# Monster Math
 
 ## Grade 10 Project: Educational Game
 
@@ -9,7 +7,7 @@ This project is designed for primary school students to enhance their mathematic
 
 ### How to Run
 1. **Download the Project Files:**
-   - Download the files provided.
+   - Download the files provided by selecting "Download Zip" under "Code".
 
 2. **Open in Delphi IDE:**
    - Open the Delphi IDE (Delphi Community Edition or any compatible version).
